@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf8">
+        <meta name="viewport" content="width=device-width">
+        <title>Bryan</title>
+        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+    </head>
+
+    <!-- Body -->
+    <body class="background">
+
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="acitve" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Github">Github</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!-- Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
+
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="oilfields">
+                <source src="./images/oilfields.mp4" type="video/mp4">
+                <!-- Display  message if video fails to run -->
+                Your browser does not support HTML5 videos.
+            </video>
+        </div>
+
+        <!-- Video text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Bryan's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever excersed such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unswervingly dutiful actors or troops.
+                    </q>
+                    <br> - Joseph Weizenbaum
+                    <br>
+                    <br>My name is Bryan. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <br>Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+        </div>
+
+        <!-- About section -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="./images/pumpingunit.jpg" alt="Oil field pumping unit also known as a pumping jack">
+            </div>
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a 4th generation oil field worker currently going to <a href="https://learncodinganywhere.com" target="_blank">The Tech Academy.</a> I've spent 13 years in the oil fields.
+                    <br>
+                    <br>As a father of 5 and grandfather of  1, I wanted a career that was not as dangerous and would get me off 14 hour graveyard shifts.
+                    <br>The courses I am taking is the Software Developer Boot Camp, by the end I will have experience with: HTML, CSS, JavaScript, SQL, C# and more.
+                    <br>
+                    <br>I helped in high school with the school web page and was a T.A. for 3 years and would love to work with you. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- Github section -->
+        <div class="Row" id="Github">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>Github</h1>
+                <p>
+                    You can view my coding projects on my Github profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/lilhack5/HTML-and-CSS-Projects" target="_blank">Bryan's Github</a></p>
+                </p>
+            </div>
+            <!-- Right column -->
+            <div class="Column_2">
+                <a href="https://github.com/lilhack5/HTML-and-CSS-Projects" target="_blank"><img src="./images/oil-pump.png" alt="oil-pump"></a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="Row" id="Contact">
+            <!-- Contact image, left column -->
+            <div class="Column_2 Column_tall">
+                <img src="./images/sunsetunit.jpg" alt="Contact_Image">
+            </div>
+            <!-- Contact form, right column -->
+            <div class="Column_1 Column_Tall">
+                <h1>Contact</h1>
+                <!-- This specifies where and how to send the form data; we are leaving it blank -->
+                <form action="" method="post"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
+</html>
